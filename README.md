@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/833068580.svg)](https://zenodo.org/doi/10.5281/zenodo.13382919)
+
 # Time-trends in life expectancy of people with severe mental illness in Scotland, 2000-2019: a population-based study
 
 This repository accompanies the paper:
