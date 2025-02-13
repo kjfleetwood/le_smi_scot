@@ -239,6 +239,21 @@ smi_first <-
   smr04_long %>%
   slice(which.min(doa))
 
+# --- Sensitivity analysis ---
+# SMI diagnosis date based on the earliest record of the most severe SMI
+# To run the sensitivity analysis replace lines 238-240 with the following code
+
+# smi_first <- 
+#   smi %>%
+#   rename(cat_rec = cat) %>%
+#   left_join(select(smi_cat, id, cat)) %>%
+#   filter(cat_rec == cat) %>%
+#   group_by(id) %>%
+#   slice(which.min(doa)) %>%
+#   ungroup()
+
+# ----------------------------
+
 # Create main SMI dataset by merging SMI category with first SMI record
 smi <- 
   smi_cat %>%
